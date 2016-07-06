@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+     tools:context=".MainActivity"
+    android:background="@drawable/login_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="考研助手"
+        android:textSize="28dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_above="@+id/loginButton"
+        android:layout_alignRight="@+id/registerButton"
+        android:layout_alignEnd="@+id/registerButton"
+        android:layout_marginBottom="42dp">
+
+        <EditText
+            style="?android:attr/textViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="输入用户名"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:textSize="20dp"
+            android:id="@+id/unameTextEdit"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@android:color/darker_gray" />
+
+        <EditText
+            style="?android:attr/textViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:id="@+id/upasswordTextEdit"/>
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/loginButton"
+
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_selector"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新用户"
+        android:id="@+id/registerButton"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/loginButton"
+        android:layout_alignEnd="@+id/loginButton"
+
+       />
+
+</RelativeLayout>
